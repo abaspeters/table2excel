@@ -1,4 +1,10 @@
+# System packages for Streamlit Community Cloud.
+#
+# Keep this list minimal. Package names differ between Debian releases and a
+# name that is wrong for the current base image fails the whole build — the
+# libglib2.0-0 / libglib2.0-0t64 rename is exactly that trap.
+#
+# opencv-python-headless is the build with GUI libraries removed, so it needs
+# no libgl1 or libglib entries here. Do not add them back.
 tesseract-ocr
 tesseract-ocr-eng
-libgl1
-libglib2.0-0
