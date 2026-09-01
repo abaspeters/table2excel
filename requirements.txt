@@ -1,0 +1,13 @@
+# Online deployment: covers BOTH readers from one repo. The no-AI deployment
+# simply never calls the API client; keeping one file avoids two dependency
+# sets drifting apart.
+streamlit>=1.40
+pypdf>=5.0
+pypdfium2>=4.30
+Pillow>=10.4
+numpy>=1.26
+opencv-python-headless>=4.10
+pytesseract>=0.3.13
+openpyxl>=3.1
+pandas>=2.2
+anthropic>=0.40

@@ -1,0 +1,14 @@
+[server]
+# Scanned PDFs are large. Streamlit's default cap is 200MB; keep this in step
+# with MAX_FILE_MB in config.py.
+maxUploadSize = 50
+headless = true
+enableXsrfProtection = true
+enableCORS = false
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"
+primaryColor = "#1F3864"
