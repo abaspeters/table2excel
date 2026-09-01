@@ -82,7 +82,6 @@ def extract_page(png_bytes: bytes, source_name: str, page: int,
     response = client.messages.create(
         model=MODEL,
         max_tokens=8000,
-        temperature=0,
         system=SYSTEM_PROMPT,
         messages=[{
             "role": "user",
